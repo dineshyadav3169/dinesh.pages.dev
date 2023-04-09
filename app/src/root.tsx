@@ -17,6 +17,8 @@ export default component$(() => {
       <head>
         <meta charSet="utf-8" />
         <link rel="manifest" href="/manifest.json" />
+        {/* noindex and nofollow robots */}
+        <meta name="robots" content="noindex, nofollow" />
         <RouterHead />
       </head>
       <body lang="en">
