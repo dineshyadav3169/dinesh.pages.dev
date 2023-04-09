@@ -5,7 +5,7 @@ import { ProjectLogo } from "./icons/project";
 export const Header = component$(() => {
   return (
     <div class="absolute inset-x-14 bottom-8">
-      <div class="flex flex-col gap-4 justify-end items-center max-h-fit font-sans origin-bottom md:flex-row-reverse md:gap-8 md:justify-between">
+      <div class="flex gap-4 justify-end items-center max-h-fit font-sans origin-bottom flex-row-reverse md:gap-8 md:justify-between">
         <div class="flex flex-1 gap-4 justify-end">
           <button
             class="flex gap-2 w-fit font-medium basis-1 justify-center items-center p-2 px-5 min-w-max text-sm font-bold text-center hover:.!text-[#09073a] hover:.bg-white hover:bg-opacity-100 active:bg-opacity-90 hover:.outline-white .outline  rounded-full hover:.outline-offset-4 active:.outline-offset-2 backdrop-blur-sm transition-all md:text-base outline-[#09073a]/50 text-emerald-50 bg-emerald-900/20 hover:bg-emerald-900"
