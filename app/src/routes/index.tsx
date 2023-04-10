@@ -44,7 +44,7 @@ export default component$(() => {
           </div>
 
 
-          <div id="about" class="flex overflow-hidden relative flex-col gap-16 p-8 mx-auto max-md:mt-16 w-full max-w-4xl leading-relaxed text-blue-100 md:p-16 md:pt-[4.25rem]">
+          <div id="about" class="flex overflow-hidden relative flex-col gap-16 p-6 mx-auto max-md:mt-16 w-full max-w-4xl leading-relaxed text-blue-100 md:p-16 md:pt-[4.25rem]">
             <AboutSection />
             <p id="projects" class="overflow-hidden max-w-full text-slate-800/50 whitespace-nowrap">========================================================================================================================================================================================================================================================================================================================================================================================================================================================================</p>
             <ProjectSection />
