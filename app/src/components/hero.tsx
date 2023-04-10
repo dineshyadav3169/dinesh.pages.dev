@@ -8,12 +8,12 @@ export const Hero = component$(() => {
       style="background:linear-gradient(0deg, #060522  30%, #061434)"
     >
       <Header />
-      <div class="flex flex-col overflow-hidden absolute justify-center items-center bg-[#061434] border-2 border-[#061434] rounded-3xl scanlines inset-4 sm:inset-6 lg:inset-12 !bottom-36 md:!bottom-24">
+      <div class="flex flex-col overflow-hidden absolute justify-center items-center sm:bg-[#061434] bg-transparent border-2 border-[#061434] rounded-3xl scanlines inset-4 sm:inset-6 lg:inset-12 !bottom-36 md:!bottom-24">
         {/* <img src="/image-avatar-croped.webp" height={150} width={150} /> */}
-        <h1 class="mt-5 flex relative text-3xl leading-none text-white">
+        <h1 class="mb-5 flex relative text-3xl leading-none text-white text-center">
           Hey, I'm Dinesh Kumar.
         </h1>
-        <h1 class="mt-5 flex relative text-4xl font-bold leading-none text-white">Developer, Student and Minimalist</h1>
+        <h1 class="mt-5 flex relative text-4xl font-bold leading-none text-white text-center" style="line-height:3rem">Developer, Student and Minimalist</h1>
       </div>
     </div>
   );
