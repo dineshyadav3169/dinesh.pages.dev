@@ -37,7 +37,7 @@ export const ContactSection = () => {
         <br />
         <div class="">
           <h2 class="mb-2 text-xl text-slate-100 ">Online Presence</h2>
-          <div class="grid grid-cols-4 gap-10 md:grid-cols-8">
+          <div class="grid grid-cols-4 gap-10 md:mr-[15rem]">
             <a
               href="https://www.linkedin.com/in/thedineshyadav"
               class="text-blue-400 underline hover:underline-offset-2 transition-all"

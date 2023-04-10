@@ -6,14 +6,20 @@ import { Hero } from "~/components/hero";
 import { ConatctLogo } from "~/components/icons/contact";
 import { ProjectLogo } from "~/components/icons/project";
 import { ProjectSection } from "~/components/project";
+import { useLocation } from "@builder.io/qwik-city";
 
 export default component$(() => {
+  const loc = useLocation();
+  if (loc.url.search.includes("linkedin")) {
+    fetch(`https://dinesh-pages.thedineshkumar.workers.dev`)
+    .then(()=> console.log("Done"))
+    .catch(()=> console.log("Error"))
+  }
   return (
     <>
       <div class="flex flex-col justify-start items-center font-mono bg-[#060522]">
         <Hero />
         <div class="relative w-full h-auto">
-          
           <div class="fixed inset-x-0 top-0 z-[1] p-4 px-6 max-xl:bg-[#060522] max-lg:border-b border-white/5 md:px-12">
             <div class="flex flex-col gap-4 justify-end items-center max-h-fit font-sans origin-bottom md:flex-row-reverse md:gap-8 md:justify-between max-md:items-stretch">
               <div class="flex flex-1 gap-4 justify-end max-md:hidden">
@@ -43,16 +49,23 @@ export default component$(() => {
             </div>
           </div>
 
-
-          <div id="about" class="flex overflow-hidden relative flex-col gap-16 p-6 mx-auto max-md:mt-16 w-full max-w-4xl leading-relaxed text-blue-100 md:p-16 md:pt-[4.25rem]">
+          <div
+            id="about"
+            class="flex overflow-hidden relative flex-col gap-16 p-6 mx-auto max-md:mt-16 w-full max-w-4xl leading-relaxed text-blue-100 md:p-16 md:pt-[4.25rem]"
+          >
             <AboutSection />
-            <p id="projects" class="overflow-hidden max-w-full text-slate-800/50 whitespace-nowrap">========================================================================================================================================================================================================================================================================================================================================================================================================================================================================</p>
+            <p
+              id="projects"
+              class="overflow-hidden max-w-full text-slate-800/50 whitespace-nowrap"
+            >
+              ========================================================================================================================================================================================================================================================================================================================================================================================================================================================================
+            </p>
             <ProjectSection />
-            <p class="overflow-hidden max-w-full text-slate-800/50 whitespace-nowrap">========================================================================================================================================================================================================================================================================================================================================================================================================================================================================</p>
+            <p class="overflow-hidden max-w-full text-slate-800/50 whitespace-nowrap">
+              ========================================================================================================================================================================================================================================================================================================================================================================================================================================================================
+            </p>
             <ContactSection />
           </div>
-
-
         </div>
       </div>
     </>
@@ -64,6 +77,15 @@ export const head: DocumentHead = {
   meta: [
     {
       name: "description",
+      content: "",
+    },
+    // Open graph
+    {
+      property: "og:title",
+      content: "Dinesh Kumar: Developer, Student and Minimalist",
+    },
+    {
+      property: "og:description",
       content: "",
     },
   ],
