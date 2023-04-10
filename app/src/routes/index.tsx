@@ -1,4 +1,4 @@
-import { component$ } from "@builder.io/qwik";
+import { component$, useBrowserVisibleTask$ } from "@builder.io/qwik";
 import type { DocumentHead } from "@builder.io/qwik-city";
 import { AboutSection } from "~/components/about";
 import { ContactSection } from "~/components/conatct";
@@ -6,15 +6,18 @@ import { Hero } from "~/components/hero";
 import { ConatctLogo } from "~/components/icons/contact";
 import { ProjectLogo } from "~/components/icons/project";
 import { ProjectSection } from "~/components/project";
-import { useLocation } from "@builder.io/qwik-city";
 
 export default component$(() => {
-  const loc = useLocation();
-  if (loc.url.search.includes("linkedin")) {
-    fetch(`https://dinesh-pages.thedineshkumar.workers.dev`)
-    .then(()=> console.log("Done"))
-    .catch(()=> console.log("Error"))
-  }
+  useBrowserVisibleTask$(() => {
+    const loc = location.search;
+    if (loc.includes("linkedin")) {
+      fetch(`https://dinesh-pages.thedineshkumar.workers.dev`, {
+        mode: 'no-cors'
+      })
+        .then(() => console.log("Welcome to my website ✨"))
+        .catch(() => console.log("Welcome to my website ✨"));
+    }
+  });
   return (
     <>
       <div class="flex flex-col justify-start items-center font-mono bg-[#060522]">
