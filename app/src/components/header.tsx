@@ -20,7 +20,7 @@ export const Header = component$(() => {
         </div>
         <button
           title="Swap Header"
-          class="flex w-fit font-medium basis-1 gap-2 justify-center items-center p-2 px-5 min-w-max text-sm font-bold text-center hover:.!text-[#09073a] hover:.bg-white hover:bg-opacity-100 active:bg-opacity-90 hover:.outline-white .outline  rounded-full hover:.outline-offset-4 active:.outline-offset-2 backdrop-blur-sm transition-all md:text-base outline-[#09073a]/50 hidden bg-indigo-800/20 hover:bg-indigo-800 md:block"
+          class=" animate-bounce flex w-fit font-medium basis-1 gap-2 justify-center items-center p-2 px-5 min-w-max text-sm font-bold text-center hover:.!text-[#09073a] hover:.bg-white hover:bg-opacity-100 active:bg-opacity-90 hover:.outline-white .outline  rounded-full hover:.outline-offset-4 active:.outline-offset-2 backdrop-blur-sm transition-all md:text-base outline-[#09073a]/50 hidden bg-indigo-800/20 hover:bg-indigo-800 md:block"
           onClick$={() => {
             const project = document.querySelector("#about");
             project?.scrollIntoView({ behavior: "smooth" });
