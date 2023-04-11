@@ -10,12 +10,16 @@ import { ProjectSection } from "~/components/project";
 export default component$(() => {
   useBrowserVisibleTask$(() => {
     const loc = location.search;
-    if (loc.includes("linkedin")) {
+    function handleScroll() {
+      document.removeEventListener("scroll", handleScroll);
       fetch(`https://dinesh-pages.thedineshkumar.workers.dev`, {
-        mode: 'no-cors'
+        mode: "no-cors",
       })
         .then(() => console.log("Welcome to my website ✨"))
         .catch(() => console.log("Welcome to my website ✨"));
+    }
+    if (loc.includes("linkedin")) {
+      document.addEventListener("scroll", handleScroll);
     }
   });
   return (
