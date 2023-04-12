@@ -35,7 +35,7 @@ export const ProjectSection = component$(() => {
             <ul style="padding-bottom: 0.6rem;" class=" my-8">
               <li>
                 <div>
-                  <h4>Document Scanner</h4>
+                  <h2>Document Scanner</h2>
                   <p>
                     A full-stack web app that scans and analyzes documents using
                     OCR and NLP. It has processed over 2 million✨ documents
@@ -46,11 +46,11 @@ export const ProjectSection = component$(() => {
               </li>
               <li>
                 <div>
-                  <h4>
+                  <h2>
                     <a href="https://temp-upload.web.app/" target="_blank" class="text-blue-400 underline hover:underline-offset-2 transition-all">
                       Temp Upload Files
                     </a>
-                  </h4>
+                  </h2>
                   <p>
                     Developed TempUpload, a web app for secure and convenient
                     temporary file sharing. Implemented automatic file deletion
@@ -64,11 +64,11 @@ export const ProjectSection = component$(() => {
               </li>
               <li>
                 <div>
-                  <h4>
+                  <h2>
                     <a href="https://mathfinding.com/" target="_blank" class="text-blue-400 underline hover:underline-offset-2 transition-all">
                       Math Solver
                     </a>
-                  </h4>
+                  </h2>
                   <p>MathSolver is a web app that uses AI to provide step-by-step solutions and explanations for math problem.</p>
                   <p class="details">
                     Open Source{" "}
