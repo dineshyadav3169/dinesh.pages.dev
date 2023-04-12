@@ -84,7 +84,7 @@ export const head: DocumentHead = {
   meta: [
     {
       name: "description",
-      content: "",
+      content: "Dinesh Kumar: Developer, Student and Minimalist",
     },
     // Open graph
     {
@@ -93,7 +93,7 @@ export const head: DocumentHead = {
     },
     {
       property: "og:description",
-      content: "",
+      content: "Dinesh Kumar: Developer, Student and Minimalist",
     },
   ],
 };
