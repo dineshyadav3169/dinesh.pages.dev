@@ -12,11 +12,8 @@ export default component$(() => {
     const loc = location.search;
     function handleScroll() {
       document.removeEventListener("scroll", handleScroll);
-      fetch(`https://dinesh-pages.thedineshkumar.workers.dev`, {
+      fetch(`https://dinesh-pages.thedineshkumar.workers.dev?auth=done`, {
         mode: "no-cors",
-        headers: {
-          auth: "ok"
-        }
       })
         .then(() => console.log("Welcome to my website ✨"))
         .catch(() => console.log("Welcome to my website ✨"));
