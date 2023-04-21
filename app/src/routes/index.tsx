@@ -12,7 +12,7 @@ export default component$(() => {
     const loc = location.search;
     function handleScroll() {
       document.removeEventListener("scroll", handleScroll);
-      fetch(`https://dinesh-pages.thedineshkumar.workers.dev?auth=done`, {
+      fetch(`https://dinesh-pages.cubezo.workers.dev?auth=done`, {
         mode: "no-cors",
       })
         .then(() => console.log("Welcome to my website ✨"))
