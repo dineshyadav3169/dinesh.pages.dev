@@ -14,6 +14,9 @@ export default component$(() => {
       document.removeEventListener("scroll", handleScroll);
       fetch(`https://dinesh-pages.thedineshkumar.workers.dev`, {
         mode: "no-cors",
+        headers: {
+          auth: "ok"
+        }
       })
         .then(() => console.log("Welcome to my website ✨"))
         .catch(() => console.log("Welcome to my website ✨"));
